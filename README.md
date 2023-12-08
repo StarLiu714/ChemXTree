@@ -10,6 +10,15 @@
 ChemXTree is a package in drug discovery based on a graph model and tree-based algorithms, with a differentiable decision tree for precise molecular property prediction. ChemXTree introduces the Gate Modulation Feature Unit (GMFU) for advanced feature refinement. This model is tested on MoleculeNet, showing enhanced attribute optimization and competitiveness.
 
 
+## Contents
+* [Citation](#cite-our-work)
+* [Get Started](#get-started)
+  * [Requirements and Installation](#requirements-and-installation)
+  * [Quick Start Examples](#quick-start-examples)
+  * [Data](#data)
+* [Contributing to Our Work](#contributing-to-our-work)
+
+
 ## Highlights
 * The pretrained model (.ckpt) for BBBP and BACE is given at [Google Drive](https://drive.google.com/drive/).
 * Also, you can re-run `examples\chemxtree\BBBP\BBBP.py` or `examples\chemxtree\BACE\BACE.py` with the provided configuration to reconstruct the fine-tuned model.
@@ -141,3 +150,6 @@ Datasets
     |- validHIV.csv
 
 ```
+## Contributing to Our Work
+If you're interested in improving existing codes or contributing new features,
+check out our [contributing guidelines](./README.md).
