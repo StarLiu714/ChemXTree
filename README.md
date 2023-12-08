@@ -1,4 +1,8 @@
 # ChemXTree
+![ChemXTree Version](https://img.shields.io/badge/ChemXTree-0.0.1-65baf6)
+![Python Version](https://img.shields.io/badge/python-3.8%20%7C%203.9%20%7C%203.10%20%7C%203.11-blue)
+[![license](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![doi](https://img.shields.io/badge/DOI-10.1101/2023.11.28.568989-blue.svg)](10.1101/2023.11.28.568989)
 
 <p align="center">
   <img src="docs/workflow.png" width="40%">
