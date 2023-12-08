@@ -49,12 +49,12 @@ Please kindly cite this paper if you use the code:
 
 #### Option 3: Download and unzip then run the command
 ```
-$ bash install.sh
+bash install.sh
 ```
 
 #### Option 4: Run `setup.py`
 ```
-$ python setup.py
+python setup.py
 ```
 
 #### Option 5: Temporary usage on colab (Pypi)
@@ -84,29 +84,29 @@ Then click 'Run all' (Ctrl+F9) to start a very basic training session!
 
 #### Start at local
 ```
-$ python example.py
+python example.py
 ```
 An example training `CYP2C9` dataset by all default hyperparameters
 
 #### To solely make fingerprints via MPNN
 ```
-$ python example_mpnn.py
+python example_mpnn.py
 ```
 An example constructing `BBBP` 5-size fingerprints
 
 #### To solely train the GMFU by applying pre-constructed fingerprints
 ```
-$ python example_gmfu.py
+python example_gmfu.py
 ```
 Applying `optuna` for bayesian optimization on `BBBP` 5-size fingerprints
 
 #### To reconstruct state-of-art model fine-tuning by our parameters
 ```
-$ python /BBBP/BBBP.py
+python /BBBP/BBBP.py
 ```
 OR
 ```
-$ python /BACE/BACE.py
+python /BACE/BACE.py
 ```
 
 ### Data
