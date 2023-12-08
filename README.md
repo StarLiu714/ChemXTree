@@ -5,7 +5,7 @@
 [![doi](https://img.shields.io/badge/DOI-10.1101/2023.11.28.568989-blue.svg)](10.1101/2023.11.28.568989)
 
 <p align="center">
-  <img src="docs/logo-13.png" width="100%">
+  <img src="docs/logo-13.png" width="85%">
 </p>
 ChemXTree is a package in drug discovery based on a graph model and tree-based algorithms, with a differentiable decision tree for precise molecular property prediction. ChemXTree introduces the Gate Modulation Feature Unit (GMFU) for advanced feature refinement. This model is tested on MoleculeNet, showing enhanced attribute optimization and competitiveness.
 
