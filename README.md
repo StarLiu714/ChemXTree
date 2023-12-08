@@ -37,7 +37,7 @@ Please kindly cite this paper if you use the code:
 
 #### Option 2: Installing from source
 
-1. `git clone https://github.com/ChemXTree/ChemXTree.git`
+1. `git clone https://github.com/StarLiu714/ChemXTree.git`
 2. `cd ChemXTree`
 3. `conda env create -f environment.yml`
 4. `conda activate ChemXTree`
