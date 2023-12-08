@@ -22,6 +22,7 @@ ChemXTree is a package in drug discovery based on a graph model and tree-based a
     * [Make Fingerprints](#to-solely-make-fingerprints-via-mpnn)
     * [Bayesian Optimization for Hyperparameters](#to-solely-train-the-gmfu-by-applying-pre-constructed-fingerprints)
   * [Data](#data)
+* [Workflow](#workflow)
 * [Contributing to Our Work](#contributing-to-our-work)
 
 
@@ -156,6 +157,12 @@ Datasets
     |- validHIV.csv
 
 ```
+
+## Workflow
+<p align="center">
+  <img src="docs/workflow.png" width="80%">
+</p>
+
 ## Contributing to Our Work
 If you're interested in improving existing codes or contributing new features,
 check out our [contributing guidelines](./README.md).
