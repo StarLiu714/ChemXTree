@@ -14,6 +14,8 @@ ChemXTree is a package in drug discovery based on a graph model and tree-based a
 * [Citation](#cite-our-work)
 * [Get Started](#get-started)
   * [Requirements and Installation](#requirements-and-installation)
+    * [Local](#option-2-installing-from-source)
+    * [Colab](#option-5-temporary-usage-on-colab)
   * [Quick Start Examples](#quick-start-examples)
     * [Google colaboratory](#start-with-google-colaboratory)
     * [Local](#start-at-local)
@@ -70,7 +72,7 @@ bash install.sh
 python setup.py
 ```
 
-#### Option 5: Temporary usage on colab (Pypi)
+#### Option 5: Temporary usage on colab
 For the entire ChemXTree package, you should run the Jupyter magic command as follows:
 ```
 !pip install chemprop==1.6.* rdkit-pypi==2022.9.* lightgbm==4.0.* xgboost==2.0.* omegaconf==2.3.* einops==0.7.* lightning_lite==1.8. pytorch-lightning==1.8.* category_encoders==2.6.*
