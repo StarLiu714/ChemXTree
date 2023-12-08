@@ -15,6 +15,10 @@ ChemXTree is a package in drug discovery based on a graph model and tree-based a
 * [Get Started](#get-started)
   * [Requirements and Installation](#requirements-and-installation)
   * [Quick Start Examples](#quick-start-examples)
+    * [Google colaboratory](#start-with-google-colaboratory)
+    * [Local](#start-at-local)
+    * [Make Fingerprints](#to-solely-make-fingerprints-via-mpnn)
+    * [Bayesian Optimization for Hyperparameters](#to-solely-train-the-gmfu-by-applying-pre-constructed-fingerprints)
   * [Data](#data)
 * [Contributing to Our Work](#contributing-to-our-work)
 
