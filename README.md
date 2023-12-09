@@ -1,12 +1,14 @@
+<p align="center">
+  <img src="docs/logo-13.png" width="85%">
+</p>
+
+----
 
 ![ChemXTree Version](https://img.shields.io/badge/ChemXTree-0.0.1-65baf6)
 ![Python Version](https://img.shields.io/badge/python-3.8%20%7C%203.9%20%7C%203.10%20%7C%203.11-blue)
 [![license](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-[![doi](https://img.shields.io/badge/DOI-10.1101/2023.11.28.568989-blue.svg)](https://doi.org/10.1101/2023.11.28.568989)
+[![doi](https://img.shields.io/badge/DOI-10.1101/2023.11.28.568989-green.svg)](https://doi.org/10.1101/2023.11.28.568989)
 
-<p align="center">
-  <img src="docs/logo-13.png" width="85%">
-</p>
 ChemXTree is a package in drug discovery based on a graph model and tree-based algorithms, with a differentiable decision tree for precise molecular property prediction. ChemXTree introduces the Gate Modulation Feature Unit (GMFU) for advanced feature refinement. This model is tested on MoleculeNet, showing enhanced attribute optimization and competitiveness.
 
 
@@ -158,11 +160,21 @@ Datasets
 
 ```
 
+
 ## Workflow
 <p align="center">
   <img src="docs/workflow.png" width="80%">
 </p>
 
-## Contributing to Our Work
-If you're interested in improving existing codes or contributing new features,
-check out our [contributing guidelines](./README.md).
+
+## Acknowledgements
+This project has benefited immensely from several external resources and contributions. We would like to express our heartfelt gratitude to:
+- [**Therapeutics Data Commons (TDC) Database**](https://doi.org/10.7910/DVN/21LKWG)
+- [**DeepChem**](https://github.com/deepchem/deepchem)
+- [**MoleculeNet**](https://moleculenet.org/)
+- [**GANDALF**](https://arxiv.org/abs/2207.08548)
+- [**ChemProp**](https://github.com/chemprop/chemprop)
+
+These resources have been instrumental in the progress and achievements of our project. We extend our sincere thanks to all the developers and contributors of these projects for their hard work and dedication.
+
+
