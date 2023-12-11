@@ -38,13 +38,9 @@ ChemXTree is a package in drug discovery based on a graph model and tree-based a
 ## Cite our work
 Please kindly cite this paper if you use the code:
 ```
-@article {Xu2023.11.28.568989,
+@article {
 	title = {ChemXTree:A Tree-enhanced Classification Approach to Small-molecule Drug Discovery},
-    author = {Yuzhi Xu and Xinxin Liu and Jiankai Ge and Wei Xia and Cheng-Wei Ju and Haiping Zhang and John Z.H. Zhang},
-    URL = {https://www.biorxiv.org/content/early/2023/11/29/2023.11.28.568989},
-	journal = {bioRxiv}
-	year = {2023},
-	doi = {10.1101/2023.11.28.568989}
+	year = {2023}
 }
 ```
 
