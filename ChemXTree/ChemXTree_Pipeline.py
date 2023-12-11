@@ -19,7 +19,8 @@ class ChemXTreePipeline:
             bayesian_optimization: bool = False,
             bayesian_config: dict = None,
             n_trials: int = 20,
-            weighted_loss_mu: int = 1  # enabled only if bayesian_optimization is False
+            weighted_loss_mu: int = 1,  # enabled only if bayesian_optimization is False
+            save_best_model: bool = False
             ):
         self.dataset_name = dataset_name
         self.base_path = base_path
@@ -36,6 +37,7 @@ class ChemXTreePipeline:
         self.bayesian_config = bayesian_config
         self.n_trials = n_trials if self.bayesian_optimization else 1
         self.mu = weighted_loss_mu
+        self.save_model = save_best_model
 
     def create_model(self, config_overrides=None):
         from .GMFU.model import GateModulationFeatureUnitConfig
@@ -130,6 +132,10 @@ class ChemXTreePipeline:
         y_test, y_pred_test = te_pred_df[self.target_cols], te_pred_df.iloc[:, -2]
         # Evaluate model
         score = self.evaluate(y_test, y_pred_test)
+
+        if self.save_model:
+            roc_auc_str = str(score).replace(".", "_")
+            model.save_model(f"model_roc_auc_{roc_auc_str}")
 
         return score
     
