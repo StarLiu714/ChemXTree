@@ -25,11 +25,12 @@ ChemXTree is a package in drug discovery based on a graph model and tree-based a
     * [Bayesian Optimization for Hyperparameters](#to-solely-train-the-gmfu-by-applying-pre-constructed-fingerprints)
   * [Data](#data)
 * [Workflow](#workflow)
-* [Contributing to Our Work](#contributing-to-our-work)
 
 
 ## Highlights
-* The pretrained model (.ckpt) for BBBP and BACE is given at [Google Drive](https://drive.google.com/drive/).
+* The pretrained model (.ckpt) for BBBP and BACE is given at Google Drive:
+   [BBBP](https://drive.google.com/file/d/1t9Wbcuahx-Vqybzq7efiyuiKYei-57Lo/view?usp=drive_link)
+   [BACE](https://drive.google.com/file/d/1lHGXI_WiGMUy53tT6qcvn0nD810Q5CMr/view?usp=drive_link)
 * Also, you can re-run `examples\chemxtree\BBBP\BBBP.py` or `examples\chemxtree\BACE\BACE.py` with the provided configuration to reconstruct the fine-tuned model.
 
 
