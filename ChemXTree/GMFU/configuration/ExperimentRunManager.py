@@ -1,5 +1,5 @@
 # GMFU Experiment Running Manager
-# Reconstructor: Star Liu <StarLiu@seas.upenn.edu>
+# Reconstructor: Star <Star@seas.hahaha.edu>
 # For license information, see LICENSE.TXT
 """Experiment Running Manager"""
 import os

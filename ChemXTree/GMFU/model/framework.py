@@ -1,5 +1,5 @@
 # GMFU base framework
-# Reconstructor: Star Liu <StarLiu@seas.upenn.edu>
+# Reconstructor: Star <Star@seas.hahaha.edu>
 # For license information, see LICENSE.TXT
 """Basic framework for Tabular model"""
 import warnings

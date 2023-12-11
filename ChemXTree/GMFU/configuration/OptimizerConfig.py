@@ -1,5 +1,5 @@
 # GMFU Optimizer Configurations
-# Reconstructor: Star Liu <StarLiu@seas.upenn.edu>
+# Reconstructor: Star <Star@seas.hahaha.edu>
 # For license information, see LICENSE.TXT
 """Optimizer configuration"""
 from dataclasses import dataclass, field

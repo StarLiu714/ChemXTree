@@ -1,5 +1,5 @@
 # GMFU read from yaml
-# Reconstructor: Star Liu <StarLiu@seas.upenn.edu>
+# Reconstructor: Star <Star@seas.hahaha.edu>
 # For license information, see LICENSE.TXT
 """ Read from yaml file"""
 import re

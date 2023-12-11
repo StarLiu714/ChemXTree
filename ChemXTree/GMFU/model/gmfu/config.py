@@ -1,5 +1,5 @@
 # GMFU configuration
-# Reconstructor: Star Liu <StarLiu@seas.upenn.edu>
+# Reconstructor: Star <Star@seas.hahaha.edu>
 # For license information, see LICENSE.TXT
 
 from dataclasses import dataclass, field

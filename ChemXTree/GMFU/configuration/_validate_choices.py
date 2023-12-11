@@ -1,5 +1,5 @@
 # GMFU validation choices
-# Reconstructor: Star Liu <StarLiu@seas.upenn.edu>
+# Reconstructor: Star <Star@seas.hahaha.edu>
 # For license information, see LICENSE.TXT
 """ Validate choices"""
 def _validate_choices(cls):

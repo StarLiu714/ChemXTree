@@ -1,5 +1,5 @@
 # EXAMPLE
-# Author: Star Liu <StarLiu@seas.upenn.edu>
+# Author: Star <Star@seas.hahaha.edu>
 """Run for MPNN Pipeline"""
 from MPNN_Pipeline import MPNNPipeline
 
