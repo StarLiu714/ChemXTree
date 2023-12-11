@@ -55,7 +55,7 @@ Please kindly cite this paper if you use the code:
 
 1. `conda create -n ChemXTree python=3.8`
 2. `conda activate ChemXTree`
-3. `pip install ChemXTree`
+3. `pip install git+https://github.com/StarLiu714/ChemXTree.git`
 
 #### Option 2: Installing from source
 
