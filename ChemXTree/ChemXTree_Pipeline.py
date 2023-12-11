@@ -135,7 +135,7 @@ class ChemXTreePipeline:
 
         if self.save_model:
             roc_auc_str = str(score).replace(".", "_")
-            model.save_model(f"model_roc_auc_{roc_auc_str}")
+            model.save_model(f"model_auc_{roc_auc_str}")
 
         return score
     
