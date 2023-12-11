@@ -72,7 +72,8 @@ pipeline = ChemXTreePipeline(
     dataset_name=DATASET_NAME,
     base_path=BASE_PATH,
     gmfu_kwargs=GMFU_KWARGS,
-    weighted_loss_mu=17
+    weighted_loss_mu=17,
+    save_best_model=True
     )
 score = pipeline._run_gmfu_training()
 
