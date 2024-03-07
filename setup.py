@@ -22,7 +22,7 @@ def read_requirements():
         'ipywidgets',
         "dataclasses; python_version == '3.6'",
         'einops==0.6.*',
-        'rich==10.2.2',
+        'rich==10.2.*',
         'rdkit-pypi==2022.9.*',
         'lightgbm==4.0.*'
     ]
