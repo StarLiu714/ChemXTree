@@ -10,5 +10,7 @@ setup(
         'lightning_lite==1.8.6',
         'pytorch-lightning==1.8.*',
         'category_encoders==2.6.*',
+        'rich==10.2.*',
+        'optuna==2.*',
     ],
 )

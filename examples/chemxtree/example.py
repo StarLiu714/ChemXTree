@@ -1,9 +1,13 @@
 from ChemXTree.ChemXTree_Pipeline import ChemXTreePipeline
 
+import sys
+sys.path.append('../../')
+
+
 # Example usage
 # Global Variables
 DATASET_NAME = "CYP2C9"
-BASE_PATH = "/ChemXTree/Datasets/" + DATASET_NAME + "/"
+BASE_PATH = "../../Datasets/" + DATASET_NAME + "/"
 
 # Set up the pipeline
 MPNN_KWARGS = {

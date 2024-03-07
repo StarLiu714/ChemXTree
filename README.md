@@ -49,6 +49,21 @@ Please kindly cite this paper if you use the code:
 
 ### Requirements and Installation
 
+#### Environment
+Dockerfile will release soon: [Dockerfile](/Dockerfile)
+For overall ChemXTree package, run exist `setup.py` in top level package:
+```
+pip install .
+```
+For GMFU, firstly enter the module-level directory,
+```
+cd GMFU
+```
+Then run module-level `setup.py`,
+```
+pip install .
+```
+
 #### Option 1: Installing from PyPi
 
 1. `conda create -n ChemXTree python=3.8`

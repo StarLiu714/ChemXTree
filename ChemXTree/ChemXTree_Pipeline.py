@@ -5,6 +5,9 @@
 import pandas as pd
 from .GMFU import TabularModel
 
+import sys
+sys.path.append('..')
+
 
 class ChemXTreePipeline:
     def __init__(
@@ -46,10 +49,12 @@ class ChemXTreePipeline:
         """Create and return the tabular model."""
         if config_overrides is None:
             config_overrides = {}
+        
+        self.load_fingerprint()
 
         # Define configurations using provided overrides
         data_config = DataConfig(
-            continuous_cols=self.train_df.columns[:-1].tolist(),
+            continuous_cols=self.train_fp_df.columns[:-1].tolist(),
             **{**self.gmfu_kwargs['data_config'], **config_overrides.get('data_config', {})}
             )
         trainer_config = TrainerConfig(
@@ -86,9 +91,9 @@ class ChemXTreePipeline:
     def load_fingerprint(self):
         """Load train, validation, and test data. Prepared for GMFU."""
         try:
-            self.train_df = pd.read_csv(self.base_path + "train_fingerprint.csv").iloc[:, 1:]
-            self.valid_df = pd.read_csv(self.base_path + "valid_fingerprint.csv").iloc[:, 1:]
-            self.test_df = pd.read_csv(self.base_path + "test_fingerprint.csv").iloc[:, 1:]
+            self.train_fp_df = pd.read_csv(self.base_path + "train_fingerprint.csv").iloc[:, 1:]
+            self.valid_fp_df = pd.read_csv(self.base_path + "valid_fingerprint.csv").iloc[:, 1:]
+            self.test_fp_df = pd.read_csv(self.base_path + "test_fingerprint.csv").iloc[:, 1:]
         except FileNotFoundError as e:
             print(f"Error loading file: {e}")
         except pd.errors.ParserError as e:
@@ -116,19 +121,19 @@ class ChemXTreePipeline:
             # Create and train the model using the best trial parameters
             model = self.create_model(config_overrides=trial.params)
             weighted_loss = get_class_weighted_cross_entropy(
-                self.train_df[self.target_cols].values.ravel(), 
+                self.train_fp_df[self.target_cols].values.ravel(), 
                 mu=trial.suggest_int("mu", 0.05, 30))  
 
         else:
             model = self.create_model()
             weighted_loss = get_class_weighted_cross_entropy(
-                self.train_df[self.target_cols].values.ravel(), mu=self.mu)
+                self.train_fp_df[self.target_cols].values.ravel(), mu=self.mu)
 
         # Fit model by re-defined parameters
         model.fit(
-            train=self.train_df, validation=self.valid_df, loss=weighted_loss)
+            train=self.train_fp_df, validation=self.valid_fp_df, loss=weighted_loss)
         # Predict on test set
-        te_pred_df = model.predict(self.test_df)
+        te_pred_df = model.predict(self.test_fp_df)
         y_test, y_pred_test = te_pred_df[self.target_cols], te_pred_df.iloc[:, -2]
         # Evaluate model
         score = self.evaluate(y_test, y_pred_test)
@@ -231,17 +236,17 @@ class ChemXTreePipeline:
         # Create and train the model
         model = self.create_model(config_overrides)
         weighted_loss = get_class_weighted_cross_entropy(
-            self.train_df[self.target_cols].values.ravel(), mu=trial.suggest_int("mu", 0.05, 30))
-        model.fit(train=self.train_df, validation=self.valid_df, loss=weighted_loss)
-        train_loss = self.calculate_loss(model, self.train_df)
-        valid_loss = self.calculate_loss(model, self.valid_df)
+            self.train_fp_df[self.target_cols].values.ravel(), mu=trial.suggest_int("mu", 0.05, 30))
+        model.fit(train=self.train_fp_df, validation=self.valid_fp_df, loss=weighted_loss)
+        train_loss = self.calculate_loss(model, self.train_fp_df)
+        valid_loss = self.calculate_loss(model, self.valid_fp_df)
         loss = 0.8 * valid_loss + 0.2 * train_loss  # assuming loss is of positive sign
         neg_loss = -loss
         # Apply penalty if loss > 0.25
         if loss > 0.25:
             penalty = -0.1
             neg_loss += penalty
-        te_pred_df = model.predict(self.test_df)
+        te_pred_df = model.predict(self.test_fp_df)
         y_test, y_pred_test = te_pred_df[self.target_cols], te_pred_df.iloc[:, -2]
         te_score = self.evaluate(y_test, y_pred_test)
         print(f"Trial {trial.number} SCORE: {te_score}")

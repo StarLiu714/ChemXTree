@@ -1,11 +1,11 @@
-# import sys
-# sys.path.append("/ChemXTree/") 
+import sys
+sys.path.append("../../../") 
 from ChemXTree import ChemXTreePipeline
 
 # Example usage
 # Global Variables
 DATASET_NAME = "BACE"
-BASE_PATH = "/ChemXTree/Datasets/" + DATASET_NAME + "/"
+BASE_PATH = "../../../Datasets/" + DATASET_NAME + "/"
 
 # Set up the pipeline
 GMFU_KWARGS = {
