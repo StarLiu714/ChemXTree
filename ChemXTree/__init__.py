@@ -10,7 +10,7 @@ from .ChemXTree_Pipeline import ChemXTreePipeline
 
 __all__ = [
     "GMFU", 
-    "MPNN", 
+    "MPNN",
     "MPNNPipeline",
     "ChemXTreePipeline" # Ensemble
 ]

@@ -39,8 +39,15 @@ ChemXTree is a package in drug discovery based on a graph model and tree-based a
 Please kindly cite this paper if you use the code:
 ```
 @article {
+	author = {Yuzhi Xu and Xinxin Liu and Jiankai Ge and Wei Xia and Cheng-Wei Ju and Haiping Zhang and John Z.H. Zhang},
 	title = {ChemXTree:A Tree-enhanced Classification Approach to Small-molecule Drug Discovery},
-	year = {2023}
+	elocation-id = {2023.11.28.568989},
+	year = {2023},
+	doi = {10.1101/2023.11.28.568989},
+	publisher = {Cold Spring Harbor Laboratory},
+  URL = {https://www.biorxiv.org/content/early/2023/11/29/2023.11.28.568989},
+	eprint = {https://www.biorxiv.org/content/early/2023/11/29/2023.11.28.568989.full.pdf},
+	journal = {bioRxiv}
 }
 ```
 
@@ -53,13 +60,14 @@ Please kindly cite this paper if you use the code:
 
 Dockerfile will release soon: [Dockerfile](/Dockerfile)
 
-For overall ChemXTree package, run exist `setup.py` in top level package:
+For overall ChemXTree package, run exist `setup.py` in top level package by using Pypi:
 ```
+cd ChemXTree-main
 pip install .
 ```
 For GMFU, firstly enter the module-level directory,
 ```
-cd GMFU
+cd ChemXTree-main/GMFU
 ```
 Then run module-level `setup.py`,
 ```
@@ -82,11 +90,13 @@ pip install .
 
 #### Option 3: Download and unzip then run the command
 ```
+cd ChemXTree-main
 bash install.sh
 ```
 
 #### Option 4: Run `setup.py`
 ```
+cd ChemXTree-main
 python setup.py
 ```
 

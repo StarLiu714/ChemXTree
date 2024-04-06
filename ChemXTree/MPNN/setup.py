@@ -6,7 +6,7 @@ def read_requirements():
         'chemprop==1.6.*',
         'rdkit-pypi==2022.9.*',
         'lightgbm==4.0.*',
-        'xgboost==2.0.*'
+        'xgboost==2.*'
     ]
 
 
