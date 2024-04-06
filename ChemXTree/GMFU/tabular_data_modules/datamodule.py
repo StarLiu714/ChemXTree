@@ -1,5 +1,5 @@
 # GMFU tabular data module
-# Reconstructor: Star <Star@seas.hahaha.edu>
+# Reconstructor: Star Liu <StarLiu@seas.upenn.edu>
 """Tabular Data Module"""
 import re
 from pathlib import Path
