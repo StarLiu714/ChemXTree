@@ -7,7 +7,7 @@ __version__ = "0.0.1"
 from .MPNN_Pipeline import MPNNPipeline
 
 __all__ = [
-    "MPNN_Pipeline",
+    "MPNNPipeline",
 ]
 
 for item in __all__:
