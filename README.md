@@ -60,13 +60,14 @@ Please kindly cite this paper if you use the code:
 
 Dockerfile will release soon: [Dockerfile](/Dockerfile)
 
-For overall ChemXTree package, run exist `setup.py` in top level package:
+For overall ChemXTree package, run exist `setup.py` in top level package by using Pypi:
 ```
+cd ChemXTree-main
 pip install .
 ```
 For GMFU, firstly enter the module-level directory,
 ```
-cd GMFU
+cd ChemXTree-main/GMFU
 ```
 Then run module-level `setup.py`,
 ```
@@ -89,11 +90,13 @@ pip install .
 
 #### Option 3: Download and unzip then run the command
 ```
+cd ChemXTree-main
 bash install.sh
 ```
 
 #### Option 4: Run `setup.py`
 ```
+cd ChemXTree-main
 python setup.py
 ```
 
