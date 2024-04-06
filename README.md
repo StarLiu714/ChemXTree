@@ -22,8 +22,10 @@ ChemXTree is a package in drug discovery based on a graph model and tree-based a
 ## Contents
 * [Citation](#cite-our-work)
 * [Get Started](#get-started)
-  * [Requirements and Installation](#requirements-and-installation)
-    * [Local](#option-2-installing-from-source)
+  * [Environment](#environment)
+  * [Installation and Setup](#installation-and-setup)
+    * [Local](#option-0-recommended-installing-from-pypi-in-a-docker-or-singularity-container)
+    * [Local: in conda env](#option-1-installing-from-pypi-via-git-clone)
     * [Colab](#option-5-temporary-usage-on-colab)
   * [Quick Start Examples](#quick-start-examples)
     * [Google colaboratory](#start-with-google-colaboratory)
@@ -45,42 +47,49 @@ Please kindly cite this paper if you use the code:
 	year = {2023},
 	doi = {10.1101/2023.11.28.568989},
 	publisher = {Cold Spring Harbor Laboratory},
-  URL = {https://www.biorxiv.org/content/early/2023/11/29/2023.11.28.568989},
-	eprint = {https://www.biorxiv.org/content/early/2023/11/29/2023.11.28.568989.full.pdf},
+	url = {https://www.biorxiv.org/content/early/2023/11/29/2023.11.28.568989},
 	journal = {bioRxiv}
 }
 ```
 
 
 ## Get Started
+Please follow the instructions below to prepare the package.
 
-### Requirements and Installation
+### Environment
 
-#### Environment
+The Dockerfile will be made available shortly: [Dockerfile](/Dockerfile)
 
-Dockerfile will release soon: [Dockerfile](/Dockerfile)
-
-For overall ChemXTree package, run exist `setup.py` in top level package by using Pypi:
+In the meantime, you can set up your environment using the `requirements.txt` file:
+```bash
+conda create -n ChemXTree python=3.8
+pip install -r requirements.txt
 ```
+
+### Installation and Setup
+
+#### Option 0 (Recommended): Installing from PyPI in a Docker or Singularity Container
+
+To install the overall ChemXTree package, download the ZIP source code and then enter an isolated environment, i.e. docker image or singularity container.
+
+After that, execute the existing `setup.py` file at the top level of the package using PyPI:
+```bash
 cd ChemXTree-main
 pip install .
 ```
-For GMFU, firstly enter the module-level directory,
-```
-cd ChemXTree-main/GMFU
-```
-Then run module-level `setup.py`,
-```
+To install a specific module, such as the GMFU module, first navigate to the module-level directory and then run the module-level `setup.py`:
+```bash
+cd ChemXTree-main/ChemXTree/GMFU
 pip install .
 ```
 
-#### Option 1: Installing from PyPi
+#### Option 1: Installing from PyPI via git clone
 
 1. `conda create -n ChemXTree python=3.8`
 2. `conda activate ChemXTree`
 3. `pip install git+https://github.com/StarLiu714/ChemXTree.git`
 
-#### Option 2: Installing from source
+#### Option 2: Installing using .yml
 
 1. `git clone https://github.com/StarLiu714/ChemXTree.git`
 2. `cd ChemXTree`
@@ -89,13 +98,13 @@ pip install .
 5. `pip install -e .`
 
 #### Option 3: Download and unzip then run the command
-```
+```bash
 cd ChemXTree-main
 bash install.sh
 ```
 
 #### Option 4: Run `setup.py`
-```
+```bash
 cd ChemXTree-main
 python setup.py
 ```
@@ -126,29 +135,29 @@ Upload the `example_colab.ipynb` along with the example dataset to your Google D
 Then click 'Run all' (Ctrl+F9) to start a very basic training session!
 
 #### Start at local
-```
+```bash
 python example.py
 ```
 An example training `CYP2C9` dataset by all default hyperparameters
 
 #### To solely make fingerprints via MPNN
-```
+```bash
 python example_mpnn.py
 ```
 An example constructing `BBBP` 5-size fingerprints
 
 #### To solely train the GMFU by applying pre-constructed fingerprints
-```
+```bash
 python example_gmfu.py
 ```
 Applying `optuna` for bayesian optimization on `BBBP` 5-size fingerprints
 
 #### To reconstruct state-of-art model fine-tuning by our parameters
-```
+```bash
 python /BBBP/BBBP.py
 ```
 OR
-```
+```bash
 python /BACE/BACE.py
 ```
 
