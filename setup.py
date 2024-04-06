@@ -33,6 +33,14 @@ def read_requirements():
 setup(
     name='ChemXTree',
     version='0.0.1',
+    description=(
+        "A graph-based drug discovery package for molecular prediction"),
+    author="Star Xinxin Liu",
+    author_email="StarLiu@seas.upenn.edu",
+    license="MIT License",
+    url="https://github.com/StarLiu714/ChemXTree/",
     packages=find_packages(), 
-    install_requires=read_requirements() 
+    install_requires=read_requirements(),
+    python_requires=">=3.6"
+
 )
