@@ -1,5 +1,5 @@
 # GMFU model
-# Reconstructor: Star <Star@seas.hahaha.edu>
+# Reconstructor: Star Liu <StarLiu@seas.upenn.edu>
 # For license information, see LICENSE.TXT
 import torch
 import torch.nn as nn

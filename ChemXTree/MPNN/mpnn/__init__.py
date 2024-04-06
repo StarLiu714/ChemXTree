@@ -4,7 +4,7 @@ __author__ = """Star Liu"""
 __email__ = "StarLiu@seas.upenn.edu"
 __version__ = "0.0.1"
 
-from .MPNN_Pipeline import MPNN_Pipeline
+from .MPNN_Pipeline import MPNNPipeline
 
 __all__ = [
     "MPNN_Pipeline",

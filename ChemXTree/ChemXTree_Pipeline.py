@@ -1,5 +1,5 @@
 # ChemXTree Pipeline
-# Author: Star <Star@seas.hahaha.edu>
+# Author: Star Liu <StarLiu@seas.upenn.edu>
 # For license information, see LICENSE.TXT
 """ChemXTree Pipeline"""
 import pandas as pd

@@ -1,5 +1,5 @@
 # Smile to MPNN Fingerprint Pipeline
-# Author: Star <Star@seas.hahaha.edu>
+# Author: Star Liu <StarLiu@seas.upenn.edu>
 """MPNN Pipeline, based on ChemProp"""
 import subprocess
 import pandas as pd
