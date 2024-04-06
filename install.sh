@@ -1,20 +1,20 @@
 #!/usr/bin/env bash
 
 # install requirements
-pip install torch==1.8.1
+pip install "torch>=1.1.*"
 pip install category-encoders==2.5.*
-pip install xgboost==2.0.*
+pip install xgboost==2.*
 pip install chemprop==1.6.*
-pip install numpy==1.17.2
-pip install pandas==1.1.5
-pip install scikit-learn==1.0.0
+pip install "numpy>=1.17.*"
+pip install pandas
+pip install scikit-learn==1.*
 pip install pytorch-lightning==1.8.*
 pip install omegaconf==2.0.1
 pip install torchmetrics==0.11.*
-pip install tensorboard==2.2.0
+pip install "tensorboard>=2.2.0,!=2.5.0"
 pip install protobuf==3.20.*
 pip install pytorch-tabnet==4.0.*
-pip install PyYAML==5.4.1
+pip install "PyYAML>=5.2"
 # pip install importlib-metadata==1.0.*  # Uncomment if needed
 pip install matplotlib==3.1.*
 pip install ipywidgets

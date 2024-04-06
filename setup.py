@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 
 def read_requirements():
     return [
-        'torch>=1.1.*',
+        'torch>=1.8.*',
         'category-encoders==2.5.*',
         'xgboost==2.*',
         'chemprop==1.6.*',
@@ -13,7 +13,7 @@ def read_requirements():
         'pytorch-lightning==1.8.*',
         'omegaconf==2.0.1',
         'torchmetrics==0.11.*',
-        'tensorboard==2.2.0,!=2.5.0',
+        'tensorboard>=2.2.0,!=2.5.0',
         'protobuf==3.20.*',
         'pytorch-tabnet==4.0.*',
         'PyYAML>=5.2',
