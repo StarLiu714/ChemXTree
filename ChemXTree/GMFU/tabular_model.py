@@ -609,7 +609,7 @@ class TabularModel:
         Returns:
             pl.Trainer: The PyTorch Lightning Trainer instance
         """
-        seed = seed if seed is not None else self.config.seed
+        seed = self.config.seed if self.config.seed is not None else seed
         seed_everything(seed)
         if datamodule is None:
             datamodule = self.prepare_dataloader(train, validation, test, train_sampler, target_transform, seed)
@@ -672,7 +672,7 @@ class TabularModel:
         Returns:
             pl.Trainer: The PyTorch Lightning Trainer instance
         """
-        seed = seed if seed is not None else self.config.seed
+        seed = self.config.seed if self.config.seed is not None else seed
         seed_everything(seed)
         if datamodule is None:
             datamodule = self.prepare_dataloader(
@@ -742,7 +742,7 @@ class TabularModel:
         assert (
             self._is_finetune_model
         ), "finetune() can only be called on a finetune model created using `TabularModel.create_finetune_model()`"
-        seed = seed if seed is not None else self.config.seed
+        seed = self.config.seed if self.config.seed is not None else seed
         seed_everything(seed)
         if datamodule is None:
             target_transform = self._check_and_set_target_transform(target_transform)

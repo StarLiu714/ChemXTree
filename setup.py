@@ -20,7 +20,7 @@ def read_requirements():
         # 'importlib-metadata==1.0.*,!=0.12.*', # Uncomment this line if needed
         'matplotlib==3.*',
         'ipywidgets',
-        "dataclasses; python_version == '3.6'",
+        "dataclasses",
         'einops==0.6.*',
         'rich==10.2.*',
         'rdkit-pypi==2022.9.*',
