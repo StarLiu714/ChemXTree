@@ -47,7 +47,8 @@ GMFU_KWARGS = {
             "devices": 1,
             "strategy": "dp",
             "num_nodes": 1
-        }
+        },
+        "seed": 456
     },
     "optimizer_config": {
         "optimizer": "AdamW",
