@@ -47,7 +47,8 @@ GMFU_KWARGS = {
             "devices": 1,
             "strategy": "dp",
             "num_nodes": 1
-        }
+        },
+        "seed": 456
     },
     "optimizer_config": {
         "optimizer": "AdamW",
@@ -72,7 +73,7 @@ pipeline = ChemXTreePipeline(
     dataset_name=DATASET_NAME,
     base_path=BASE_PATH,
     gmfu_kwargs=GMFU_KWARGS,
-    weighted_loss_mu=6,
+    weighted_loss_mu=7,
     save_best_model=True
     )
 score = pipeline._run_gmfu_training()
