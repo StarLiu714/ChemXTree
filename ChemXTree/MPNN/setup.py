@@ -4,7 +4,8 @@ from setuptools import setup, find_packages
 def read_requirements():
     return [
         'chemprop==1.6.*',
-        'rdkit-pypi==2022.9.*',
+        'rdkit==2023.9.*',
+        'pandas<=2.1.*',
         'lightgbm==4.0.*',
         'xgboost==2.*'
     ]
