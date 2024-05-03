@@ -3,6 +3,7 @@ from setuptools import setup, find_packages
 
 def read_requirements():
     return [
+        'pandas==1.1.*',
         'chemprop==1.6.*',
         'rdkit-pypi==2022.9.*',
         'lightgbm==4.0.*',
