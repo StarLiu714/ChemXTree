@@ -8,7 +8,7 @@ def read_requirements():
         'xgboost==2.*',
         'chemprop==1.6.*',
         'numpy>=1.17.*',
-        'pandas',
+        'pandas<=2.1.*',
         'scikit-learn==1.*',
         'pytorch-lightning==1.8.*',
         'omegaconf==2.0.1',
@@ -23,7 +23,7 @@ def read_requirements():
         "dataclasses",
         'einops==0.6.*',
         'rich==10.2.*',
-        'rdkit-pypi==2022.9.*',
+        'rdkit==2023.*',
         'lightgbm==4.*'
     ]
 
