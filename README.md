@@ -68,7 +68,8 @@ pip install -r requirements.txt
 
 ### Installation and Setup
 
-#### Option 0 (Recommended): Installing from PyPI in a Docker or Singularity Container
+<details>
+<summary>Option 0 (Recommended): Installing from PyPI in a Docker or Singularity Container</summary> 
 
 To install the overall ChemXTree package, download the ZIP source code and then enter an isolated environment, i.e. docker image or singularity container.
 
@@ -82,34 +83,48 @@ To install a specific module, such as the GMFU module, first navigate to the mod
 cd ChemXTree-main/ChemXTree/GMFU
 pip install .
 ```
+</details>
 
-#### Option 1: Installing from PyPI via git clone
+
+<details>
+<summary>Option 1: Installing from PyPI via git clone</summary> 
 
 1. `conda create -n ChemXTree python=3.8`
 2. `conda activate ChemXTree`
 3. `pip install git+https://github.com/StarLiu714/ChemXTree.git`
+</details>
 
-#### Option 2: Installing using .yml
+
+<details>
+<summary>Option 2: Installing using .yml</summary> 
 
 1. `git clone https://github.com/StarLiu714/ChemXTree.git`
 2. `cd ChemXTree`
 3. `conda env create -f environment.yml`
 4. `conda activate ChemXTree`
 5. `pip install -e .`
+</details>
 
-#### Option 3: Download and unzip then run the command
+<details>
+<summary>Option 3: Download and unzip then run the command</summary> 
 ```bash
 cd ChemXTree-main
 bash install.sh
 ```
+</details>
 
-#### Option 4: Run `setup.py`
+
+<details>
+<summary>Option 4: Run `setup.py`</summary> 
 ```bash
 cd ChemXTree-main
 python setup.py
 ```
+</details>
 
-#### Option 5: Temporary usage on colab
+
+<details>
+<summary>Option 5: Temporary usage on colab</summary> 
 For the entire ChemXTree package, you should run the Jupyter magic command as follows:
 ```
 !pip install chemprop==1.6.* rdkit-pypi==2022.9.* lightgbm==4.0.* xgboost==2.0.* omegaconf==2.3.* einops==0.7.* lightning_lite==1.8. pytorch-lightning==1.8.* category_encoders==2.6.*
@@ -126,6 +141,8 @@ Or alternatively, after putting requirements.txt on '/content/' folder
 ```
 !pip install -r "requirements.txt"
 ```
+</details>
+
 
 
 ### Quick Start Examples
