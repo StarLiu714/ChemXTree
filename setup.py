@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 
 def read_requirements():
     return [
-        'torch>=1.8.*',
+        'torch>=1.8',
         'category-encoders==2.5.*',
         'xgboost==2.*',
         'chemprop==1.6.*',
