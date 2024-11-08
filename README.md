@@ -40,16 +40,18 @@ ChemXTree is a package in drug discovery based on a graph model and tree-based a
 ## Cite our work
 Please kindly cite this paper if you use the code:
 ```
-@article {
-	author = {Yuzhi Xu and Xinxin Liu and Jiankai Ge and Wei Xia and Cheng-Wei Ju and Haiping Zhang and John Z.H. Zhang},
-	title = {ChemXTree:A Tree-enhanced Classification Approach to Small-molecule Drug Discovery},
-	elocation-id = {2023.11.28.568989},
-	year = {2023},
-	doi = {10.1101/2023.11.28.568989},
-	publisher = {Cold Spring Harbor Laboratory},
-	url = {https://www.biorxiv.org/content/early/2023/11/29/2023.11.28.568989},
-	journal = {bioRxiv}
+@article{Xu2024,
+  author = {Xu, Yuzhi and Liu, Xinxin and Xia, Wei and Ge, Jiankai and Ju, Cheng-Wei and Zhang, Haiping and Zhang, John Z.H.},
+  title = {ChemXTree: A Feature-Enhanced Graph Neural Network-Neural Decision Tree Framework for ADMET Prediction},
+  journal = {Journal of Chemical Information and Modeling},
+  volume = {64},
+  year = {2024},
+  month = {11},
+  doi = {10.1021/acs.jcim.4c01186},
+  publisher = {American Chemical Society},
+  issn = {1549-9596}
 }
+
 ```
 
 
